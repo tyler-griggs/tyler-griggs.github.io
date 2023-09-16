@@ -81,7 +81,7 @@ analytics:
 # Site Author
 author:
   name             : "Tyler Griggs"
-  avatar           : "tyler_profile.png"
+  avatar           : "/images/tyler_profile.png"
   bio              : "Ph.D. Student in UC Berkeley SkyLab"
   employer         :
   # googlescholar    : "http://yourfullgooglescholarurl.com"
