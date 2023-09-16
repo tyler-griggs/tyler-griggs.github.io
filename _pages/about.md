@@ -10,7 +10,7 @@ redirect_from:
 
 I am a first-year Ph.D. student in Computer Science at UC Berkeley in the [Sky Computing Lab](https://sky.cs.berkeley.edu/) co-advised by [Ion Stoica](http://people.eecs.berkeley.edu/~istoica/) and [John Kubiatowicz](https://people.eecs.berkeley.edu/~kubitron/). I was previously at Google for 3 years working in Network Infrastructure. Before that, I graduated from Harvard with a BA in Computer Science advised by [James Mickens](https://mickens.seas.harvard.edu/).
 
-Publications and Projects.
+Publications and Projects
 ======
 
 {% include projects.md %}
