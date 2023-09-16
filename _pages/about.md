@@ -1,6 +1,6 @@
 ---
 permalink: /
-title: "Intro"
+title: "Tyler Griggs"
 excerpt: "About me"
 author_profile: true
 redirect_from: 
