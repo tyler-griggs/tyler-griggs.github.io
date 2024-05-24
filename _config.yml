@@ -84,7 +84,7 @@ author:
   avatar           : "tyler_profile2.png"
   bio              : "Ph.D. Student in UC Berkeley SkyLab"
   employer         :
-  # googlescholar    : "http://yourfullgooglescholarurl.com"
+  googlescholar    : "https://scholar.google.com/citations?user=OlrVINUAAAAJ&hl=en&oi=ao"
   email            : "tgriggs@berkeley.edu"
   researchgate     :  # example: "https://www.researchgate.net/profile/yourprofile"
   uri              :
