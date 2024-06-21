@@ -5,6 +5,8 @@ permalink: /blogs/
 author_profile: true
 ---
 
+See melange below:
+
 {% include base_path %}
 
 {% include site.blogs.melange.md %}
