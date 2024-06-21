@@ -8,7 +8,7 @@ redirect_from:
   - /about.html
 ---
 
-I am a first-year Ph.D. student in Computer Science at UC Berkeley in the [Sky Computing Lab](https://sky.cs.berkeley.edu/) advised by [Ion Stoica](http://people.eecs.berkeley.edu/~istoica/). I was previously at Google for 3 years working in Network Infrastructure. Before that, I graduated from Harvard with a BA in Computer Science advised by [James Mickens](https://mickens.seas.harvard.edu/).
+I am a first-year Ph.D. student in Computer Science in the UC Berkeley [Sky Computing Lab](https://sky.cs.berkeley.edu/) advised by [Ion Stoica](http://people.eecs.berkeley.edu/~istoica/). Previously, I worked in Network Infrastructure at Google Cloud. Before that, I graduated from Harvard with a BA in Computer Science advised by [James Mickens](https://mickens.seas.harvard.edu/).
 
 Projects
 ======
