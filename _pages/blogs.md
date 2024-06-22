@@ -1,11 +1,9 @@
 ---
 layout: archive
-title: "Blogs-2"
+title: "Blogs"
 permalink: /blogs/
 author_profile: true
 ---
-
-## Blogs
 
 ### **Mélange: Efficient GPU Allocation for Large Language Models**
 Published on: January 1, 2024  
