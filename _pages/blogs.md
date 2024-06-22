@@ -10,8 +10,6 @@ Published on: January 1, 2024
 
 {% include base_path %}
 
-<!-- {% include site.blogs.melange.md %} -->
-
-{% for post in site.blogs  %}
+{% for post in site.blogs reversed %}
   {% include archive-single.html %}
 {% endfor %}
