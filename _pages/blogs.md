@@ -5,7 +5,7 @@ permalink: /blogs/
 author_profile: true
 ---
 
-## [**Mélange: Cost Efficient Large Language Model Serving by Exploiting GPU Heterogeneity**](/blogs/melange)
+## [**Cutting LLM Deployments Costs with a Mélange of GPUs**](/blogs/melange)
 Published on: June 21, 2024  
 
 {% include base_path %}
