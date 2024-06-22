@@ -5,7 +5,8 @@ permalink: /blogs/melange
 date: 2014-06-21
 ---
 
-*For more details, see the [paper on Arxiv](https://arxiv.org/abs/2404.14527).*
+*For more details, see the* <a href="https://arxiv.org/abs/2404.14527" target="_blank">*paper on Arxiv*</a>.
+
 
 ### The High Cost of LLM Deployment
 
