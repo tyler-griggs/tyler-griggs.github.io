@@ -2,6 +2,7 @@
 title: "Cutting LLM Deployment Costs with a Mélange of GPUs"
 collection: blogs
 permalink: /blogs/melange
+authors: Tyler Griggs, Xiaoxuan Liu, Jiaxiang Yu, Doyoung Kim, Wei-Lin Chiang, Alvin Cheung, Ion Stoica
 date: 2014-06-21
 ---
 
