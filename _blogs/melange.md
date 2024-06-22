@@ -1,4 +1,9 @@
-# Mélange: Efficient GPU Allocation for Large Language Models
+---
+title: "Mélange: Efficient GPU Allocation for Large Language Models"
+collection: blogs
+permalink: /blogs/melange
+date: 2014-06-21
+---
 
 ## Overview
 

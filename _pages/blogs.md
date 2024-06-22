@@ -5,8 +5,8 @@ permalink: /blogs/
 author_profile: true
 ---
 
-### **Mélange: Efficient GPU Allocation for Large Language Models**
-Published on: January 1, 2024  
+## **Mélange: Efficient GPU Allocation for Large Language Models**
+Published on: June 21, 2024  
 
 {% include base_path %}
 
