@@ -33,7 +33,7 @@ We find that three LLM service characeteristics significantly influence GPU cost
 ## Request Size
 
 <!-- The size of each request, which includes both input and output token lengths, significantly impacts GPU cost efficiency. Smaller request sizes tend to be more cost-effective on lower-end GPUs, achieving a higher number of tokens processed per dollar. Conversely, larger request sizes benefit from the greater processing power of high-end GPUs, making them more cost-efficient for such tasks. -->
-To demonstrate the effect of LLM request size (input and output lengths) on GPU cost efficiency, we illustrate three case studies. In each case, we measure the maximum generation throughput each GPU type achieves across a range of request sizes, and divide the throughput by the GPU's on-demand rental cost, resulting in a measure of cost efficiency (tokens/\$, or T/\$). In each plot, a tile's shade indicates which GPU is most cost effective and the tile's value indicates the percent increase of cost efficiency relative to the less cost efficient GPU.
+To demonstrate the effect of LLM request size (input and output lengths) on GPU cost efficiency, we illustrate three case studies. In each case, we measure the maximum generation throughput each GPU type achieves across a range of request sizes, and divide the throughput by the GPU's on-demand rental cost, resulting in a measure of cost efficiency (tokens/\$, T/\\$ T/\\\$ or T/\$). In each plot, a tile's shade indicates which GPU is most cost effective and the tile's value indicates the percent increase of cost efficiency relative to the less cost efficient GPU.
 
 * **Llama2-7b on A100 and A10G:** In Plot 1, for small requests, A10G achieves up to 72% greater cost efficiency. Conversely, as the request size increases, A100 demonstrates 38% greater cost efficiency.
 
@@ -91,7 +91,7 @@ In general, at low request rates, services can save costs by right-sizing down f
 ## Service-Level Objectives (SLOs)
 Services typically establish latency-based service-level objectives to define the performance standards that a service must meet. High-end GPUs are essential for stringent SLOs due to their lower latency and higher throughput. However, for services with more relaxed SLOs, lower-end GPUs can be used effectively to cut costs while still meeting performance expectations.
 
-In Plot 6, we compare the cost efficiency (tokens/\\$, T/\\\$, or T/\$) of A10G and A100 serving Llama2-7b at a range of request rates and Time Per Output Token (TPOT) SLOs. A modification to the TPOT SLO shifts the boundary within the request size space between which A10G or A100 are most cost effective, and significantly influences the magnitude of cost efficiency differences between the GPUs. As a result, both request size and SLO must be considered in tandem when determining cost efficiency.
+In Plot 6, we compare the cost efficiency (tokens/\$, or T/\$) of A10G and A100 serving Llama2-7b at a range of request rates and Time Per Output Token (TPOT) SLOs. A modification to the TPOT SLO shifts the boundary within the request size space between which A10G or A100 are most cost effective, and significantly influences the magnitude of cost efficiency differences between the GPUs. As a result, both request size and SLO must be considered in tandem when determining cost efficiency.
 
 **Takeaway:** While strict SLOs require expensive high-performance GPUs, lower-end GPUs can be used to cut deployment costs in loose-SLO scenarios.
 
