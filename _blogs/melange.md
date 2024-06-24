@@ -73,7 +73,7 @@ Consider serving Llama2-7b across varying request rates with three different GPU
 
 In general, at low request rates, services can save costs by right-sizing down from expensive, high-end GPUs to more affordable, lower-end GPUs. Further, even at high request rates, a mix of GPU types can be used to more closely match demand, optimizing GPU utilization and reducing resource waste.
 
-**Takeaway:** Mixing heterogeneous GPU types permits a finer-grained approach to resource allocation, which better aligns provisioned resources with workload demand.
+**Takeaway:** Mixing heterogeneous GPU types permits a finer-grained approach to resource scaling, which better aligns provisioned resources with workload demand.
 
 
 
@@ -91,7 +91,7 @@ In general, at low request rates, services can save costs by right-sizing down f
 ## Service-Level Objectives (SLOs)
 Services typically establish latency-based service-level objectives to define the performance standards that a service must meet. High-end GPUs are essential for stringent SLOs due to their lower latency and higher throughput. However, for services with more relaxed SLOs, lower-end GPUs can be used effectively to cut costs while still meeting performance expectations.
 
-In Plot 6, we compare the cost efficiency (tokens/\$, or T/\$) of A10G and A100 serving Llama2-7b at a range of request rates and Time Per Output Token (TPOT) SLOs. A modification to the TPOT SLO shifts the boundary within the request size space between which A10G or A100 are most cost effective, and significantly influences the magnitude of cost efficiency differences between the GPUs. As a result, both request size and SLO must be considered in tandem when determining cost efficiency.
+In Plot 6, we compare the cost efficiency (tokens/\\$, T/\\\$, or T/\$) of A10G and A100 serving Llama2-7b at a range of request rates and Time Per Output Token (TPOT) SLOs. A modification to the TPOT SLO shifts the boundary within the request size space between which A10G or A100 are most cost effective, and significantly influences the magnitude of cost efficiency differences between the GPUs. As a result, both request size and SLO must be considered in tandem when determining cost efficiency.
 
 **Takeaway:** While strict SLOs require expensive high-performance GPUs, lower-end GPUs can be used to cut deployment costs in loose-SLO scenarios.
 
