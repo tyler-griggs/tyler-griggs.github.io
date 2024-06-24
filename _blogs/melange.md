@@ -46,22 +46,22 @@ To demonstrate the effect of LLM request size (input and output lengths) on GPU 
 <!-- TODO: drop shadow on the plot -->
 <div style="display: flex; flex-wrap: wrap; gap: 10px;">
   <div style="flex: 1; text-align: center;">
-    <img src="images/a100-v-a10g.png" alt="Plot 1" width="100%">
+    <img src="images/a100-v-a10g-2.png" alt="Plot 1" width="100%">
     <p>Plot 1: Llama2-7b on A10G, A100</p>
   </div>
   <div style="flex: 1; text-align: center;">
-    <img src="images/h100-v-a100.png" alt="Plot 2" width="100%">
+    <img src="images/h100-v-a100-2.png" alt="Plot 2" width="100%">
     <p>Plot 2: Llama2-70b on 2xH100, 2xA100</p>
   </div>
 </div>
 
 <div style="display: flex; flex-wrap: wrap; gap: 10px;">
   <div style="flex: 1; text-align: center;">
-    <img src="images/all-gpus-best.png" alt="Plot 3" width="100%">
+    <img src="images/all-gpus-best-2.png" alt="Plot 3" width="100%">
     <p>Plot 3: Best GPU vs 2nd Best GPU</p>
   </div>
   <div style="flex: 1; text-align: center;">
-    <img src="images/all-gpus-worst.png" alt="Plot 4" width="100%">
+    <img src="images/all-gpus-worst-2.png" alt="Plot 4" width="100%">
     <p>Plot 4: Best GPU vs Worst GPU</p>
   </div>
 </div>
@@ -79,11 +79,11 @@ In general, at low request rates, services can save costs by right-sizing down f
 
 <div style="display: flex; flex-wrap: wrap; gap: 10px;">
   <div style="flex: 1; text-align: center;">
-    <img src="images/req-rate-comparison.png" alt="Plot 5" width="100%">
+    <img src="images/req-rate-comparison-2.png" alt="Plot 5" width="100%">
     <p>Plot 5: Llama2-7b on A10G and A100 across rates</p>
   </div>
   <div style="flex: 1; text-align: center;">
-    <img src="images/a100-v-a10g-slo-grid.png" alt="Plot 6" width="100%">
+    <img src="images/a100-v-a10g-slo-grid-2.png" alt="Plot 6" width="100%">
     <p>Plot 6: Llama2-7b on A10G and A100 across TPOT SLOs and request sizes</p>
   </div>
 </div>
