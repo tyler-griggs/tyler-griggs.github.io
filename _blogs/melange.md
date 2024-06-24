@@ -3,7 +3,7 @@ title: "Cutting LLM Deployment Costs with a Mélange of GPUs"
 collection: blogs
 permalink: /blogs/melange
 authors: Tyler Griggs, Xiaoxuan Liu, Jiaxiang Yu, Doyoung Kim, Wei-Lin Chiang, Alvin Cheung, Ion Stoica
-date: 2014-06-21
+date: 2024-06-24
 ---
 
 *For more details, see the* <a href="https://arxiv.org/abs/2404.14527" target="_blank">*paper on Arxiv*</a>.
@@ -18,7 +18,7 @@ Many prior works reduce deployment costs by increasing the inference engine perf
 
 ### GPU Heterogeneity to the Rescue
 
-There is a large and growing option space of AI hardware accelerators, from NVIDIA GPUs and AMD GPUs to Google TPUs, AWS Inferentia, and more. Within these options, higher cost does not always lead to higher performance. We find, instead, that the cost efficiency of a given GPU is heavily influenced by three key characteristics of LLM services: request sizes, request rates, and service-level objectives (SLOs).
+There is a large and growing option space of AI hardware accelerators, from NVIDIA GPUs and AMD GPUs to Google TPUs, AWS Inferentia, and more. Within these options, *higher cost does not always lead to higher performance*. We find, instead, that the cost efficiency of a given GPU is heavily influenced by three key characteristics of LLM services: request sizes, request rates, and service-level objectives (SLOs).
 
 Whereas most LLM service deployments use only a single GPU type to host model replicas, we show that a *mix* of heterogeneous GPUs, tailored to the specific characteristics of a given LLM service, can lead to significant cost savings. 
 
@@ -26,17 +26,20 @@ Building on this analysis, we introduce **Mélange**, a framework designed to op
 
 ## Key Factors Influencing GPU Cost Efficiency
 
+We found that three LLM service characeteristics significantly influence GPU cost efficiency:
+
 ### Request Size
 
 <!-- The size of each request, which includes both input and output token lengths, significantly impacts GPU cost efficiency. Smaller request sizes tend to be more cost-effective on lower-end GPUs, achieving a higher number of tokens processed per dollar. Conversely, larger request sizes benefit from the greater processing power of high-end GPUs, making them more cost-efficient for such tasks. -->
+To demonstrate the effect of LLM request size (input and output lengths) on GPU cost efficiency, we illustrate three case studies. In each case, we measure the maximum generation throughput each GPU type achieves across a range of request sizes, and divide the throughput by the GPU's on-demand rental cost, resulting in a measure of cost efficiency (tokens/$, or T/$). In each plot, a tile's shade indicates which GPU is most cost effective and the tile's value indicates the percent increase of cost efficiency relative to the less cost efficient GPU.
 
-Model request sizes have significant influence on which GPU type is most cost effective for inference. To demonstrate this, we illustrate three case studies. In each case, we measure the maximum throughput each GPU type achieves across a range of request sizes, and divide the throughput by the GPU's on-demand rental cost. In each plot, a tile's shade indicates which GPU is most cost effective and the tile's value indicates the percent increase of cost efficiency relative to the less cost efficient GPU.
-
-* **Llama2-7b on A100 and A10G:** For small requests, A10G achieves up to 72% greater cost efficiency. Conversely, as the request size increases, A100 demonstrates 38% greater cost efficiency.
+* **Llama2-7b on A100 and A10G:** In Plot 1, for small requests, A10G achieves up to 72% greater cost efficiency. Conversely, as the request size increases, A100 demonstrates 38% greater cost efficiency.
 
 * **Llama2-70b on L4, A10G, A100, and H100 serving:** We extend the study to include L4 and H100. Plot 3 compares the best GPU to the second best, and Plot 4 compares the best to the worst. In the black boxes, only A100 and H100 are compared. Note that, across the large request size spectrum, there are regions where each of the four GPU types is most cost effective.
 
-* **Llama2-70b on 2xH100 and 2xA100:** We also examing a tensor parallel setting, and observe similar trends. The cheaper GPU (A100) achieves higher cost efficiency for smaller requests, while the higher-end GPU (H100) excels for large request sizes.
+* **Llama2-70b on 2xH100 and 2xA100:** In Plot 2, we also examine a tensor parallel setting (2 H100s and 2 A100s) and observe similar trends. The cheaper GPU (A100) achieves higher cost efficiency for smaller requests, while the higher-end GPU (H100) excels for large request sizes.
+
+**Takeaways:** There is no universally most cost-efficient GPU for a given LLM. Instead, GPU cost efficiency is highly dependent on request sizes. Lower-end GPUs are more cost-effective for small request sizes whereas higher-end GPUs are best for large request sizes.
 
 <!-- TODO: drop shadow on the plot -->
 <div style="display: flex; flex-wrap: wrap; gap: 10px;">
@@ -64,9 +67,13 @@ Model request sizes have significant influence on which GPU type is most cost ef
 
 ### Request Rate
 
-At low request rates, services can save costs by scaling down from expensive, high-end GPUs to more affordable, lower-end GPUs. This allows the service to right-size its resources based on demand, optimizing GPU utilization and cost efficiency. Mixing different GPU types further enhances cost savings by providing a finer-grained approach to resource allocation, which better aligns provisioned resources with workload demand
+Consider serving Llama2-7b across varying request rates with three different GPU allocation policies: A10G-only, A100-only, or a mix of both. Plot 5 depicts the on-demand rental cost of serving a range of traffic volume with these policies. At low rates, A10G is the cheapest choice, then A100 becomes the economic option for higher rates. However, using a mix of A10G and A100s permits finer-grained scaling and consistently leads to the lowest cost.
 
-Consider serving Llama2-7b with three different GPU allocation policies: A10G-only, A100-only, or a mix of both. Plot 5 depicts the on-demand rental cost of serving a range of traffic volume. At low rates A10G is the cheaper choice, then A100 becomes the economic option for higher rates. However, using a mix of A10G and A100s permits finer-grained scaling and consistently leads to the lowest cost.
+In general, at low request rates, services can save costs by right-sizing down from expensive, high-end GPUs to more affordable, lower-end GPUs. Further, even at high request rates, a mix of GPU types can be used to more closely match demand, optimizing GPU utilization and reducing resource waste.
+
+**Takeaway:** Mixing heterogeneous GPU types permits a finer-grained approach to resource allocation, which better aligns provisioned resources with workload demand.
+
+
 
 <div style="display: flex; flex-wrap: wrap; gap: 10px;">
   <div style="flex: 1; text-align: center;">
