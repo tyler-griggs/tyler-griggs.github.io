@@ -9,7 +9,7 @@ date: 2024-06-24
 *This blog is based on our preprint "Mélange: Cost Efficient Large Language Model Serving by Exploiting GPU Heterogeneity". For more details, see the* <a href="https://arxiv.org/abs/2404.14527" target="_blank">*preprint on arXiv*</a> and <a href="https://github.com/tyler-griggs/melange-release" target="_blank">*code on Github*</a>.
 
 ### TL;DR
-Using an optimal *mix* of GPU types in your LLM deployment can significantly cut deployment costs by exploiting differing GPU cost efficiencies across diverse LLM service scenarios.
+Using an optimal *mix* of GPU types in your LLM deployment can significantly cut deployment costs by exploiting differing GPU cost efficiencies across diverse LLM service scenarios. In our experiments using 4 NVIDIA GPUs, we find that using a mix of GPU types can reduce LLM deployment costs by up to 77% compared to using a single GPU type.
 
 ## The High Cost of LLM Deployment
 
