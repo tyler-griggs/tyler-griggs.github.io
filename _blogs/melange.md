@@ -181,5 +181,5 @@ If you use Mélange in your research, please cite our [paper](https://arxiv.org/
   author={Griggs, Tyler and Liu, Xiaoxuan and Yu, Jiaxiang and Kim, Doyoung and Chiang, Wei-Lin and Cheung, Alvin and Stoica, Ion},
   journal={arXiv preprint arXiv:2404.14527},
   year={2024}
-}
+} 
 ```
