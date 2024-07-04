@@ -112,6 +112,9 @@ Mélange’s strength stems from two key properties. First, it is *heterogeneity
 
 We evaluated Mélange's performance using various GPU types (NVIDIA L4, A10G, A100, and H100), model sizes (Llama2-7b and Llama2-70b), and TPOT SLOs (40ms, 120ms). To capture a range of service scenarios, we use three datasets in evaluations: Chatbot Arena [dataset](https://huggingface.co/datasets/lmsys/lmsys-chat-1m) for short-context tasks, Pubmed [dataset](https://huggingface.co/datasets/ccdv/pubmed-summarization) for long-contex tasks, and a synthetic blend of the two datasets for a mixed-context setting. We compare against baselines that use only a single GPU type. Our results indicate substantial cost reductions in diverse service settings:
 
+<div style="flex: 1; text-align: center;">
+  <img src="images/cost_legend-1.png" style="width: 50%;">
+</div>
 <div style="display: flex; flex-wrap: wrap; gap: 10px;">
   <div style="flex: 1; text-align: center;">
     <img src="images/Arena_120-1.png" alt="Plot 7" width="100%">
@@ -125,6 +128,9 @@ We evaluated Mélange's performance using various GPU types (NVIDIA L4, A10G, A1
 
 **Short-Context Tasks (Interactive Chats):** In Plots 7 & 8, Mélange achieves 15-77% cost reduction (120ms SLO) and 9-68% reduction (40ms SLO) compared to single-GPU strategies. At 1-2 req/s, H100/A100 are underutilized, making L4/A10G the economic option.. However, as the rate increases, L4/A10G’s cost advantage reduces as A100/H100 are better utilized, yet they remain competitive with A100 even at higher request rates due to their T/\\$ advantage for smaller request sizes. Conversely, at a 40ms SLO, A10G/L4 show much higher relative costs due to their increased latency, requiring more instances to meet the tight deadline. Mélange adapts by allocating more L4/A10G at 120ms SLO and more A100 at 40ms SLO, consistently reducing overall cost.
 
+<div style="flex: 1; text-align: center;">
+  <img src="images/cost_legend-1.png" style="width: 50%;">
+</div>
 <div style="display: flex; flex-wrap: wrap; gap: 10px;">
   <div style="flex: 1; text-align: center;">
     <img src="images/Pubmed_120-1.png" alt="Plot 9" width="100%">
@@ -138,6 +144,9 @@ We evaluated Mélange's performance using various GPU types (NVIDIA L4, A10G, A1
 
 **Long-Context Tasks (Document Summarization):** In Plots 9 & 10, Mélange achieves 15-33% cost reduction (120ms SLO) and 2-22% reduction (40ms SLO). A100 generally achieves higher T/\\$ for the request sizes in PubMed, evidenced by the 120ms setting where A100-only is consistently cheaper than H100-only. However, when SLO tightens to 40ms, H100 is the clear winner due to H100’s lower inference latency. Again, Mélange adapts to these dynamics by allocating a greater share of A100s at a looser SLO, and more H100s as the SLO is tightened.
 
+<div style="flex: 1; text-align: center;">
+  <img src="images/cost_legend-1.png" style="width: 50%;">
+</div>
 <div style="display: flex; flex-wrap: wrap; gap: 10px;">
   <div style="flex: 1; text-align: center;">
     <img src="images/Mixed_80_20_120-1.png" alt="Plot 11" width="100%">
