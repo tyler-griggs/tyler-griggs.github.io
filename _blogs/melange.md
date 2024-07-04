@@ -3,7 +3,7 @@ title: "Exploiting Heterogeneous GPUs to Cut LLM Deployment Costs"
 collection: blogs
 permalink: /blogs/melange
 authors: Tyler Griggs, Xiaoxuan Liu, Jiaxiang Yu, Doyoung Kim, Wei-Lin Chiang, Alvin Cheung, Ion Stoica
-date: 2024-06-24
+date: 2024-07-04
 ---
 
 *This blog is based on our preprint "Mélange: Cost Efficient Large Language Model Serving by Exploiting GPU Heterogeneity". For more details, see the* <a href="https://arxiv.org/abs/2404.14527" target="_blank">*preprint on arXiv*</a> and <a href="https://github.com/tyler-griggs/melange-release" target="_blank">*code on Github*</a>.
