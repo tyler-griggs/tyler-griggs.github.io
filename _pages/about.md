@@ -10,13 +10,15 @@ redirect_from:
 
 I am a second year Ph.D. student in Computer Science in the UC Berkeley [Sky Computing Lab](https://sky.cs.berkeley.edu/) advised by [Ion Stoica](http://people.eecs.berkeley.edu/~istoica/) and [Matei Zaharia](https://people.eecs.berkeley.edu/~matei/). Previously, I worked in Network Infrastructure at Google Cloud. Before that, I graduated from Harvard with a BA in Computer Science advised by [James Mickens](https://mickens.seas.harvard.edu/).
 
+Along with several wonderful collaborators, I am a co-lead of [NovaSky](https://novasky-ai.github.io/posts/about-us/). Our work has been featured in [The New York Times](https://www.nytimes.com/2025/01/23/technology/deepseek-china-ai-chips.html), [The Wall Street Journal](https://www.wsj.com/tech/ai/why-distillation-has-become-the-scariest-wordfor-ai-companies-aa146ae3), and [The Information](https://www.theinformation.com/articles/why-its-cheap-and-easy-to-mimic-openais-reasoning-model).
+
 Projects
 ======
 
 <!-- {% include projects.md %} -->
 
 <div style="display: flex; align-items: center; margin-bottom: 1.5em;">
-  <img src="{{ base_path }}/images/structure-not-content.png" alt="Structure not Content" style="width: 250px; height: auto; margin-right: 15px;">
+  <img src="{{ base_path }}/images/structure-not-content.png" alt="Structure not Content" style="width: 200px; height: auto; margin-right: 15px;">
   <div>
     <strong>LLMs Can Easily Learn to Reason from Demonstrations</strong>: Structure, not content, is what matters!<br>
     Dacheng Li*, Shiyi Cao*, <strong>Tyler Griggs*</strong>, Shu Liu*, Xiangxi Mo, Eric Tang, Sumanth Hegde, Kourosh Hakhamaneshi, Shishir G Patil, Matei Zaharia, Joseph E Gonzalez, Ion Stoica<br>
@@ -36,7 +38,7 @@ Projects
 </div>
 
 <div style="display: flex; align-items: center; margin-bottom: 1.5em;">
-  <img src="{{ base_path }}/images/sky-serve-thumbnail.png" alt="SkyServe" style="width: 150px; height: auto; margin-right: 15px;">
+  <img src="{{ base_path }}/images/sky-serve-thumbnail.png" alt="SkyServe" style="width: 200px; height: auto; margin-right: 15px;">
   <div>
     <strong>SkyServe</strong>: Serving AI Models across Regions and Clouds with Spot Instances<br>
     Ziming Mao, Tian Xia, Zhanghao Wu, Wei-Lin Chiang, <strong>Tyler Griggs</strong>, Romil Bhardwaj, Zongheng Yang, Scott Shenker, Ion Stoica<br>
@@ -47,7 +49,7 @@ Projects
 </div>
 
 <div style="display: flex; align-items: center; margin-bottom: 1.5em;">
-  <img src="{{ base_path }}/images/melange-thumbnail.png" alt="Mélange" style="width: 300px; height: auto; margin-right: 15px;">
+  <img src="{{ base_path }}/images/melange-thumbnail.png" alt="Mélange" style="width: 200px; height: auto; margin-right: 15px;">
   <div>
     <strong>Mélange</strong>: Cost Efficient Large Language Model Serving by Exploiting GPU Heterogeneity<br>
     <strong>Tyler Griggs</strong>, Xiaoxuan Liu, Jiaxiang Yu, Doyoung Kim, Wei-Lin Chiang, Alvin Cheung, Ion Stoica<br>
