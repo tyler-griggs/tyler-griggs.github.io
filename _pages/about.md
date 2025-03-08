@@ -16,6 +16,16 @@ Projects
 <!-- {% include projects.md %} -->
 
 <div style="display: flex; align-items: center; margin-bottom: 1.5em;">
+  <img src="{{ base_path }}/images/structure-not-content.png" alt="Structure not Content" style="width: 150px; height: auto; margin-right: 15px;">
+  <div>
+    <strong>LLMs Can Easily Learn to Reason from Demonstrations</strong>: Structure, not content, is what matters!<br>
+    Dacheng Li*, Shiyi Cao*, <strong>Tyler Griggs*</strong>, Shu Liu*, Xiangxi Mo, Eric Tang, Sumanth Hegde, Kourosh Hakhamaneshi, Shishir G Patil, Matei Zaharia, Joseph E Gonzalez, Ion Stoica<br>
+    <span style="font-style:italic">arXiv preprint</span> 
+    [<a style="text-decoration:none" href="https://arxiv.org/abs/2502.07374" target="_blank">Paper</a>] 
+  </div>
+</div>
+
+<div style="display: flex; align-items: center; margin-bottom: 1.5em;">
   <img src="{{ base_path }}/images/moe-lightning-thumbnail.png" alt="MoE-Lightning" style="width: 150px; height: auto; margin-right: 15px;">
   <div>
     <strong>MoE-Lightning</strong>: High-Throughput MoE Inference on Memory-constrained GPUs<br>
