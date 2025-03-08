@@ -16,7 +16,7 @@ Projects
 <!-- {% include projects.md %} -->
 
 <div style="display: flex; align-items: center; margin-bottom: 1.5em;">
-  <img src="{{ base_path }}/images/structure-not-content.png" alt="Structure not Content" style="width: 150px; height: auto; margin-right: 15px;">
+  <img src="{{ base_path }}/images/structure-not-content.png" alt="Structure not Content" style="width: 250px; height: auto; margin-right: 15px;">
   <div>
     <strong>LLMs Can Easily Learn to Reason from Demonstrations</strong>: Structure, not content, is what matters!<br>
     Dacheng Li*, Shiyi Cao*, <strong>Tyler Griggs*</strong>, Shu Liu*, Xiangxi Mo, Eric Tang, Sumanth Hegde, Kourosh Hakhamaneshi, Shishir G Patil, Matei Zaharia, Joseph E Gonzalez, Ion Stoica<br>
@@ -26,7 +26,7 @@ Projects
 </div>
 
 <div style="display: flex; align-items: center; margin-bottom: 1.5em;">
-  <img src="{{ base_path }}/images/moe-lightning-thumbnail.png" alt="MoE-Lightning" style="width: 150px; height: auto; margin-right: 15px;">
+  <img src="{{ base_path }}/images/moe-lightning-thumbnail.png" alt="MoE-Lightning" style="width: 200px; height: auto; margin-right: 15px;">
   <div>
     <strong>MoE-Lightning</strong>: High-Throughput MoE Inference on Memory-constrained GPUs<br>
     Shiyi Cao, Shu Liu, <strong>Tyler Griggs</strong>, Peter Schafhalter, Xiaoxuan Liu, Ying Sheng, Joseph E Gonzalez, Matei Zaharia, Ion Stoica<br>
@@ -47,7 +47,7 @@ Projects
 </div>
 
 <div style="display: flex; align-items: center; margin-bottom: 1.5em;">
-  <img src="{{ base_path }}/images/melange-thumbnail.png" alt="Mélange" style="width: 150px; height: auto; margin-right: 15px;">
+  <img src="{{ base_path }}/images/melange-thumbnail.png" alt="Mélange" style="width: 300px; height: auto; margin-right: 15px;">
   <div>
     <strong>Mélange</strong>: Cost Efficient Large Language Model Serving by Exploiting GPU Heterogeneity<br>
     <strong>Tyler Griggs</strong>, Xiaoxuan Liu, Jiaxiang Yu, Doyoung Kim, Wei-Lin Chiang, Alvin Cheung, Ion Stoica<br>
