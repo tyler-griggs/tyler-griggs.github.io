@@ -12,6 +12,13 @@ I am a second year Ph.D. student in Computer Science in the UC Berkeley [Sky Com
 
 Along with several wonderful collaborators, I am a co-lead of [NovaSky](https://novasky-ai.github.io/posts/about-us/). Our work has been featured in [The New York Times](https://www.nytimes.com/2025/01/23/technology/deepseek-china-ai-chips.html), [The Wall Street Journal](https://www.wsj.com/tech/ai/why-distillation-has-become-the-scariest-wordfor-ai-companies-aa146ae3), and [The Information](https://www.theinformation.com/articles/why-its-cheap-and-easy-to-mimic-openais-reasoning-model).
 
+<!-- News
+======
+*Feb '25:* Arxived [LLMs Can Easily Learn to Reason from Demonstrations Structure](https://arxiv.org/abs/2502.07374)
+*Feb '25:* 
+*Jan '25:* Released [Sky-T1-32B-Flash](https://novasky-ai.github.io/posts/reduce-overthinking/) to reduce overthinking in reasoning models
+*Jan '25:* Launched [NovaSky](https://novasky-ai.github.io/posts/about-us/) -->
+
 Projects
 ======
 
