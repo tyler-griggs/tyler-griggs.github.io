@@ -86,4 +86,18 @@ a:hover {
 
 .italic {
     font-style: italic;
+}
+
+.highlight-text {
+    background-color: #fff9c4;
+    padding: 0.3rem 0.5rem;
+    border-radius: 4px;
+    display: inline-block;
+}
+
+.github-stars {
+    transform: scale(0.5);
+    transform-origin: left center;
+    display: inline-block;
+    vertical-align: middle;
 } 
