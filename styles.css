@@ -101,3 +101,71 @@ a:hover {
     display: inline-block;
     vertical-align: middle;
 } 
+
+/* --- Responsive adjustments --- */
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+@media (max-width: 768px) {
+    body {
+        padding: 1rem;
+    }
+
+    .profile {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .profile-image-container {
+        margin-right: 0;
+        margin-bottom: 1rem;
+    }
+
+    .profile img {
+        width: 180px;
+        height: 180px;
+    }
+
+    .profile > div:last-child {
+        font-size: 1rem;
+    }
+
+    .social-icons {
+        gap: 1rem;
+    }
+
+    .project {
+        flex-direction: column;
+        align-items: stretch;
+        padding: 1rem;
+    }
+
+    .project img {
+        width: 100%;
+        height: auto;
+        margin-right: 0;
+        margin-bottom: 1rem;
+    }
+
+    .github-stars {
+        transform: scale(0.7);
+    }
+}
+
+@media (max-width: 480px) {
+    .profile img {
+        width: 140px;
+        height: 140px;
+    }
+
+    h1 {
+        font-size: 1.6rem;
+    }
+
+    h2 {
+        font-size: 1.2rem;
+    }
+} 
