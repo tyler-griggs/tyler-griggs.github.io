@@ -102,11 +102,6 @@ a:hover {
     vertical-align: middle;
 } 
 
-/* --- Responsive adjustments --- */
-img {
-    max-width: 100%;
-    height: auto;
-}
 
 @media (max-width: 768px) {
     body {
@@ -168,4 +163,4 @@ img {
     h2 {
         font-size: 1.2rem;
     }
-} 
+}
